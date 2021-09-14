@@ -1,3 +1,8 @@
+---
+title: javaIO
+date: 2021/9/14
+categories: JAVA
+---
 ## IO
 
 ### 文件
@@ -13,7 +18,7 @@ File file = new File(pathname);
 - File类的常用方法
 
 ![image-20210914152444830](/image/javaIO/image-20210914152444830.png)
-
+<!-- more -->
 ### 流的基本概念
 
 > ​		流是指一连串流动的字符,是以先进先出方式发送信息的通道
