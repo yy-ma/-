@@ -21,7 +21,7 @@ categories: JAVA
 
 - 集合的基本操作：增加，删除，判断，取出
 
-![image-20210911151456833](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911151456833.png)
+![image-20210911151456833](/image/java容器/image-20210911151456833.png)
 
 ### List不Set接口
 
@@ -33,7 +33,7 @@ categories: JAVA
 
 - Map接口存储一组键值对象，提供key到value的映射
 
-![image-20210911151554697](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911151554697.png)
+![image-20210911151554697](/image/java容器/image-20210911151554697.png)
 
 
 
@@ -41,7 +41,7 @@ categories: JAVA
 
 - List特点:有序，不唯一（可重复）
 
-![image-20210911151636377](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911151636377.png)
+![image-20210911151636377](/image/java容器/image-20210911151636377.png)
 
 - ArrayList实现了长度可变的数组，在内存中分配连续的空间。
 
@@ -49,7 +49,7 @@ categories: JAVA
 
   – 缺点：添加和删除需要大量移动元素效率低，按照内容查询效 率低
 
-![image-20210911153039564](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911153039564.png)
+![image-20210911153039564](/image/java容器/image-20210911153039564.png)
 
 - LinkedList采用链表存储方式。
 
@@ -57,13 +57,13 @@ categories: JAVA
 
   – 缺点：遍历和随机访问元素效率低下
 
-![image-20210911153103807](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911153103807.png)
+![image-20210911153103807](/image/java容器/image-20210911153103807.png)
 
 ### List接口特有的方法
 
 - 凡是可以操作索引的方法都是该体系特有方法
 
-![image-20210911153348816](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911153348816.png)
+![image-20210911153348816](/image/java容器/image-20210911153348816.png)
 
 ### Iterator 接口
 
@@ -80,7 +80,7 @@ void remove(); //删除游标左面的元素，在执行完next之后该
 							 //操作只能执行一次
 ```
 
-![image-20210911153518272](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911153518272.png)
+![image-20210911153518272](/image/java容器/image-20210911153518272.png)
 
 - 所有的集合类均未提供相应的遍历方法，而是把遍历交给迭代器 完成。迭代器为集合而生，与门实现集合遍历
 
@@ -157,13 +157,13 @@ if (obj.equals("java2")) {
 - 如果想要在迭代的过程中进行向集合中添加，修改元素等就需要使用 
 - ListIterator接口中的方法
 
-![image-20210911154156761](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154156761.png)
+![image-20210911154156761](/image/java容器/image-20210911154156761.png)
 
 ### List接口的实现类LinkedList
 
 - linkedList特有的方法
 
-![image-20210911154224151](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154224151.png)
+![image-20210911154224151](/image/java容器/image-20210911154224151.png)
 
 ### ArrayList和LinkedList总结
 
@@ -189,7 +189,7 @@ if (obj.equals("java2")) {
 
   – 操作数据的方法不List类似，Set接口丌存在get()方法
 
-![image-20210911154400579](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154400579.png)
+![image-20210911154400579](/image/java容器/image-20210911154400579.png)
 
 - HashSet:采用Hashtable哈希表存储结构
 
@@ -203,7 +203,7 @@ if (obj.equals("java2")) {
 
   ​	 ▪ 有序（添加顺序）
 
-![image-20210911154444872](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154444872.png)
+![image-20210911154444872](/image/java容器/image-20210911154444872.png)
 
 - TreeSet
 
@@ -213,11 +213,11 @@ if (obj.equals("java2")) {
 
   – 缺点：查询速度没有HashSet快
 
-![image-20210911154514559](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154514559.png)
+![image-20210911154514559](/image/java容器/image-20210911154514559.png)
 
 ### Hash表原理
 
-![image-20210911154531179](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154531179.png)
+![image-20210911154531179](/image/java容器/image-20210911154531179.png)
 
 ### Hash表
 
@@ -225,7 +225,7 @@ if (obj.equals("java2")) {
 
 - 使用HashSet存储自定义对象，重写hashCode方法不equals方法
 
-![image-20210911154607066](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911154607066.png)
+![image-20210911154607066](/image/java容器/image-20210911154607066.png)
 
 ### HashSet
 
@@ -285,7 +285,7 @@ public int hashCode() {
 
   – 缺点：查询速度没有HashSet快
 
-![image-20210911161045749](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911161045749.png)
+![image-20210911161045749](/image/java容器/image-20210911161045749.png)
 
 ### Comparable 接口
 
@@ -295,7 +295,7 @@ public int hashCode() {
 
   public int compareTo(Object obj)； 该方法:
 
-  ![image-20210911161200450](/Users/mayingyi/03.Blog/blog/image/java容器/image-20210911161200450.png)
+  ![image-20210911161200450](/image/java容器/image-20210911161200450.png)
 
 - 实现了Comparable 接口的类通过实现 comparaTo 方法从而确定 该类对象的排序方式。
 
@@ -382,3 +382,105 @@ System.out.println("姓名:"+t.getKey()+"\t年龄:"+t.getValue());
 ​	▪ 使用泛型集合ArrayList,LinkedList,HashSet,TreeSet完成员工的添加， 删除， 
 
 ​	▪ 判断，集合中元素个数的判断
+
+### Map
+
+- Map
+	– 特点key-value映射
+- HashMap
+	– Key无序 唯一（Set）
+	– Value无序 不唯一(Collection)
+- LinkedHashMap 
+	– 有序的HashMap 速度快
+- TreeMap
+	– 有序 速度没有hash快
+- 问题：Set不Map有关系吗？ 
+	– 采用了相同的数据结构，只用于map的key存储数据,以上是Set
+	
+### Map接口
+
+![image-20210912153526410](/image/java容器/image-20210912153526410.png)
+
+![image-20210912153551002](/image/java容器/image-20210912153551002.png)
+
+### Collections工具类
+
+Collections和Collection不同，前者是集合的操作类，后者是集合接口 
+
+Collections提供的静态方法
+
+​	addAll():批量添加 
+
+​	sort():排序 
+
+​	binarySearch()：二分查找 
+
+​	fill()：替换 
+
+​	shuffle():随机排序 
+
+​	reverse():逆序
+
+### 集合总结
+
+![image-20210912153721059](/image/java容器/image-20210912153721059.png)
+
+![image-20210912153737042](/image/java容器/image-20210912153737042.png)
+
+### 集合不数组的比较
+
+- 集合和数组的比较
+
+  – 数组不是面向对象的，存在明显的缺陷，集合弥补了数组的一 些缺点，比数组更灵活更实用，可大大提高软件的开发效率， 而丏丌同的集合框架类可适用不同场合。具体如下：
+
+  – 1：数组能存放基本数据类型和对象，而集合类中只能存放对象。
+
+  – 2：数组容易固定无法动态改变，集合类容量动态改变。
+
+  – 3：数组无法判断其中实际存有多少元素，length只告诉了数 组的容量，而集合的size()可以确切知道元素的个数
+
+  – 4：集合有多种实现方式和不同适用场合，不像数组仅采用顺序 表方式
+
+  – 5：集合以类的形式存在，具有封装、继承、多态等类的特性， 通过简单的方法和属性即可实现各种复杂操作，大大提高了软 件的开发效率
+
+### Collection和Collections的区别
+
+- Collection是Java提供的集合接口，存储一组不唯一，无序的 对象。它有两个子接口List和Set。
+
+- Java还有一个Collections类，与门用来操作集合类，它提供了 一系列的静态方法实现对各种集合的搜索、排序、线程安全化 等操作。
+
+### ArrayList和LinkedList的联系和区别
+
+- ArrayList实现了长度可变的数组，在内存中分配连续空间。遍 历元素和随机访问元素效率比较高。
+
+![image-20210914091344446](/image/java容器/image-20210914091344446.png)
+
+- LinkedList采用链表存储方式。插入、删除元素效率比较高
+
+![image-20210914091403188](/image/java容器/image-20210914091403188.png)
+
+### Vector和ArrayList的联系和区别
+
+- 实现原理相同，功能相同，都是长度可变的数组结构，很多时 候可以互用
+
+- 两者的主要区别如下 
+
+  ▪ Vector是早期的JDK接口，ArrayList是替代Vector的新接口 
+
+  ▪ Vector线程安全，ArrayList重速度轻安全，线程非安全 
+
+  ▪ 长度需要增长时，Vector默认增长一倍，ArrayList增长50% (1.5+1)
+
+### HashMap和Hashtable的联系和区别
+
+- 实现原理相同，功能相同，底层都是哈希表结构，查询速度快， 在很多情况下可以互用
+
+- 两者的主要区别如下 
+
+  ▪ Hashtable是早期的JDK提供的接口，HashMap是新版的 JDK提供的接口 
+
+  ▪ Hashtable继承Dictionary类，HashMap实现Map接口 
+
+  ▪ Hashtable是线程安全，HashMap线程非安全 
+
+  ▪ Hashtable丌允许null值，HashMap允许null值
