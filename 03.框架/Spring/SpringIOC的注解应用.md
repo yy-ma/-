@@ -49,14 +49,14 @@ applicationContext.xml
     base-package:指定扫描的基础包，spring在启动的时候会将基础包及子包下所有加了注解的类都自动
                 扫描进IOC容器
     -->
-    <context:component-scan base-package="com.mashibing"></context:component-scan>
+    <context:component-scan base-package="com.magicsky"></context:component-scan>
 </beans>
 ```
 
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
 import org.springframework.stereotype.Controller;
 
@@ -71,7 +71,7 @@ public class PersonController {
 PersonService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
 import org.springframework.stereotype.Service;
 
@@ -83,7 +83,7 @@ public class PersonService {
 PersonDao.java
 
 ```java
-package com.mashibing.dao;
+package com.magicsky.dao;
 
 import org.springframework.stereotype.Repository;
 
@@ -108,7 +108,7 @@ applicationContext.xml
        http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.mashibing" use-default-filters="false">
+    <context:component-scan base-package="com.magicsky" use-default-filters="false">
         <!--
         当定义好基础扫描的包之后，可以排除包中的某些类，使用如下的方式:
         type:表示指定过滤的规则
@@ -121,7 +121,7 @@ applicationContext.xml
 <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
 
         <!--指定只扫描哪些组件，默认情况下是全部扫描的，所以此时要配置的话需要在component-scan标签中添加 use-default-filters="false"-->
-        <context:include-filter type="assignable" expression="com.mashibing.service.PersonService"/>
+        <context:include-filter type="assignable" expression="com.magicsky.service.PersonService"/>
     </context:component-scan>
 </beans>
 ```
@@ -133,9 +133,9 @@ applicationContext.xml
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
-import com.mashibing.service.PersonService;
+import com.magicsky.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -158,9 +158,9 @@ public class PersonController {
 PersonService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.dao.PersonDao;
+import com.magicsky.dao.PersonDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -179,7 +179,7 @@ public class PersonService {
 PersonDao.java
 
 ```java
-package com.mashibing.dao;
+package com.magicsky.dao;
 
         import org.springframework.stereotype.Repository;
 
@@ -207,9 +207,9 @@ public class PersonDao {
 PersonServiceExt.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.dao.PersonDao;
+import com.magicsky.dao.PersonDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -229,9 +229,9 @@ public class PersonServiceExt extends PersonService{
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
-import com.mashibing.service.PersonService;
+import com.magicsky.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -260,9 +260,9 @@ public class PersonController {
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
-import com.mashibing.service.PersonService;
+import com.magicsky.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -293,10 +293,10 @@ public class PersonController {
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
-import com.mashibing.dao.PersonDao;
-import com.mashibing.service.PersonService;
+import com.magicsky.dao.PersonDao;
+import com.magicsky.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -353,10 +353,10 @@ public class PersonController {
 PersonController.java
 
 ```java
-package com.mashibing.controller;
+package com.magicsky.controller;
 
-import com.mashibing.dao.PersonDao;
-import com.mashibing.service.PersonService;
+import com.magicsky.dao.PersonDao;
+import com.magicsky.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -409,7 +409,7 @@ public class PersonController {
 Student.java
 
 ```java
-package com.mashibing.bean;
+package com.magicsky.bean;
 
 public class Student {
 }
@@ -418,7 +418,7 @@ public class Student {
 Teacher.java
 
 ```java
-package com.mashibing.bean;
+package com.magicsky.bean;
 
 public class Teacher {
 }
@@ -427,7 +427,7 @@ public class Teacher {
 BaseDao.java
 
 ```java
-package com.mashibing.dao;
+package com.magicsky.dao;
 
 import org.springframework.stereotype.Repository;
 
@@ -441,9 +441,9 @@ public abstract class BaseDao<T> {
 StudentDao.java
 
 ```java
-package com.mashibing.dao;
+package com.magicsky.dao;
 
-import com.mashibing.bean.Student;
+import com.magicsky.bean.Student;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -457,9 +457,9 @@ public class StudentDao extends BaseDao<Student>{
 TeacherDao.java
 
 ```java
-package com.mashibing.dao;
+package com.magicsky.dao;
 
-import com.mashibing.bean.Teacher;
+import com.magicsky.bean.Teacher;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -473,9 +473,9 @@ public class TeacherDao extends BaseDao<Teacher> {
 StudentService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.dao.StudentDao;
+import com.magicsky.dao.StudentDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -494,9 +494,9 @@ public class StudentService {
 TeacherService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.dao.TeacherDao;
+import com.magicsky.dao.TeacherDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -514,8 +514,8 @@ public class TeacherService {
 MyTest.java
 
 ```java
-import com.mashibing.service.StudentService;
-import com.mashibing.service.TeacherService;
+import com.magicsky.service.StudentService;
+import com.magicsky.service.TeacherService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -539,9 +539,9 @@ public class MyTest {
 BaseService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.dao.BaseDao;
+import com.magicsky.dao.BaseDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -560,10 +560,10 @@ public class BaseService<T> {
 StudentService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.bean.Student;
-import com.mashibing.dao.StudentDao;
+import com.magicsky.bean.Student;
+import com.magicsky.dao.StudentDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -576,10 +576,10 @@ public class StudentService extends BaseService<Student> {
 TeacherService.java
 
 ```java
-package com.mashibing.service;
+package com.magicsky.service;
 
-import com.mashibing.bean.Teacher;
-import com.mashibing.dao.TeacherDao;
+import com.magicsky.bean.Teacher;
+import com.magicsky.dao.TeacherDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
