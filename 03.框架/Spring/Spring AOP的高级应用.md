@@ -1,5 +1,5 @@
 ---
-title: Spring AOP介绍与使用
+title: Spring AOP的应用配置
 date: 2021/9/27
 categories: Spring
 ---
