@@ -12,7 +12,7 @@ categories: Spring
 <!-- more -->
 主要包含的模块：
 
-![](/image/spring-overview.png)
+![](/image/Spring/spring-overview.png)
 
 ### Spring框架的优势
 
@@ -66,7 +66,7 @@ categories: Spring
 
 ### BeanFactory和ApplicationContext的异同
 
-![](/image/ApplicationContext类图.png)
+![](/image/Spring/ApplicationContext类图.png)
 
 相同：
 
@@ -85,7 +85,7 @@ categories: Spring
 
 ### Spring Bean 的生命周期？
 
-![](/image/bean生命周期.png)
+![](/image/Spring/bean生命周期.png)
 
 总结：
 
@@ -173,7 +173,7 @@ categories: Spring
 
 ### Spring 的不同事务传播行为有哪些，干什么用的？
 
-![](/image/传播特性.jpg)
+![](/image/Spring/传播特性.jpg)
 
 ### Spring 中用到了那些设计模式？
 
